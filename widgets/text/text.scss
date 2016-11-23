@@ -1,0 +1,36 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------#7A1FA2
+$background-color:  teal;
+
+$title-color:       rgba(255, 255, 255, 0.7);
+$moreinfo-color:    rgba(255, 255, 255, 0.7);
+
+// ----------------------------------------------------------------------------
+// Widget-text styles
+// ----------------------------------------------------------------------------
+.widget-text {
+
+  background-color: $background-color;
+
+  .title {
+    color: currentColor;
+	padding-right:50%;
+	text-align:initial;
+  }
+
+  .more-info {
+    color: currentColor;
+	font-family:lato;
+  }
+
+  .updated-at {
+    color: currentColor;
+	font-family: lato;
+  }
+
+
+  &.large h3 {
+    font-size: 65px;
+  }
+}

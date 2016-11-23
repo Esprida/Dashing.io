@@ -1,0 +1,36 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #eb9c3c;
+
+$title-color:       rgba(255, 255, 255, 0.7);
+$moreinfo-color:    rgba(255, 255, 255, 0.7);
+
+// ----------------------------------------------------------------------------
+// Widget-comment styles
+// ----------------------------------------------------------------------------
+.widget-comments {
+
+  background-color: $background-color;
+
+  .title {
+    color: currentColor;
+    margin-bottom: 15px;
+	padding-left:70%;
+	padding-bottom:23%;
+  }
+
+  .name {
+    padding-left: 5px;
+  }
+
+  .comment-container {
+    display: none;
+  }
+
+  .more-info {
+    color: currentColor;
+	font-family: lato;
+  }
+
+}

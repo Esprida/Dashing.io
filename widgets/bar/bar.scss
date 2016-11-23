@@ -1,0 +1,44 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #7B20A3;
+
+$title-color:       currentColor;
+$moreinfo-color:    #ffffff;
+$updateat-color:    #ffffff;
+
+// If you want the title at the top, set the position to 'top'
+$title-position:    top;
+
+// ----------------------------------------------------------------------------
+// Widget-bar-chart styles
+// ----------------------------------------------------------------------------
+.widget-bar-chart {
+
+  background-color: $background-color;
+
+  .title {
+    @if $title-position == 'top' {
+      left: 0;
+      right: 0;
+      top: 10px;
+      position: absolute;
+    }
+    @else {
+      position: relative;
+    }
+
+    z-index: 1;
+    color: $title-color;
+  }
+
+  .more-info {
+    color: $moreinfo-color;
+  }
+
+  .updated-at {
+    color: currentColor;
+	font-family:lato;
+  }
+
+}

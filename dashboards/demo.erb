@@ -1,0 +1,102 @@
+
+
+<% content_for :title do %>1080p dashboard<% end %>
+<body style="background-color:#F4FAFA">
+<div style="background-color:white; width:1240px" class="gridster">
+	<h3 style="color:#176373; float:right;">Esprida LiveControl <b>Dashboard</b><h3>
+	<img src="assets/logo.png" alt="Header Img"/>
+</div>
+<div class="gridster">
+  <ul>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Image" data-image="/connected-logo.png"></div>
+    </li>
+    <li data-row="1" data-col="4" data-sizex="1" data-sizey="1">
+      <div data-view="Clock"></div>
+      <i class="fa fa-clock-o icon-background" style="background-color:#30B8A0"></i>
+    </li>
+    <li data-row="1" data-col="2" data-sizex="2" data-sizey="1">
+      <div data-id="welcome" data-view="Text" data-title="Manufacturing Site: Esprida Building 205" data-text="This dashboard shows status of all essential equipment in building 205." data-moreinfo="Protip: You can drag the widgets around!" style="background-color:#176579;"></div>
+    </li>
+
+	<li data-row="2" data-col="1" data-sizex="1" data-sizey="2">
+      <div data-id="buzzwords" data-view="List" data-unordered="false" data-title="Assets" data-moreinfo="Assets reporting status via LiveControl Edge"></div>
+    </li>
+	<li data-row="2" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-id="helpdesktickets" data-view="Number" data-title="Help Desk Tickets" style="background-color:#3F51B5;"></div>
+      <i class="fa fa-heart icon-background"></i>
+    </li>
+	<li data-row="2" data-col="3" data-sizex="1" data-sizey="1">
+		<div data-id="weather" data-view="Weather"></div>
+	</li>
+	<li data-row="2" data-col="4" data-sizex="1" data-sizey="1">
+      <div data-id="humidity" data-view="Number" data-title="Humidity Reading"  style="background-color:#F44336;"></div>
+      <i class="fa icon-background"></i>
+    </li>
+	
+	<li data-row = "3" data-col = "2" data-sizex = "1" data-sizey = "1">
+		<div data-view = "Image" data-image = "/battery1.png" style = "background-color:#9C27B0;"></div>
+	</li>
+	<li data-row = "3" data-col = "3" data-sizex = "1" data-sizey = "1">
+		<div data-id = "batterystatus" data-view = "Number" data-suffix = "%" data-title = "Battery Status" style = "background-color:#BA68C8;"></div>
+	</li>
+	<li data-row = "3" data-col = "4" data-sizex = "1" data-sizey = "1">
+		<div data-id = "chargelevel" data-view = "Number" data-suffix = "%" data-title = "Battery Charge Level" style = "background-color:#BA68C8;"></div>
+	</li>
+	
+	<li data-row="4" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Image" data-image="/cpu-logo.png" style="background-color:#F44336;"></div>
+    </li>
+	<li data-row="4" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-id="cpu-temp" data-view="Number" data-title="CPU Temp" data-suffix = "c" style="background-color:#E57373;"></div>
+      <i class="fa icon-background"></i>
+    </li>
+	<li data-row="4" data-col="3" data-sizex="2" data-sizey="1">
+      <div data-id="cpu-fan" data-view="Number" data-title="CPU Fan Speed" data-suffix = "rpm" style="background-color:#E57373;"></div>
+      <i class="fa icon-background"></i>
+    </li>
+		
+	<li data-row="5" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Image" data-image="/power-icon.png" style="background-color:#FF9800;"></div>
+    </li>
+	<li data-row="5" data-col="2" data-sizex="2" data-sizey="1">
+      <div data-id="ACVoltage" data-view="Graph" data-title="AC-Voltage" data-suffix = "V" style="background-color:#FFB74D;"></div>
+    </li>
+	<li data-row="5" data-col="4" data-sizex="1" data-sizey="1">
+      <div data-id="12VRail" data-view="Number" data-title="12-V Rail" style="background-color:#FFB74D;"></div>
+      <i class="fa icon-background"></i>
+    </li>
+	
+	<li data-row="6" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Image" data-image="/hdd.png" style="background-color:#4CAF50;"></div>
+    </li>
+	<li data-row="6" data-col="2" data-sizex="2" data-sizey="1">
+      <div data-id="hdspeed" data-view="Number" data-title="HardDisk Speed" data-suffix = "RPM" style="background-color:#81C784;"></div>
+    </li>
+	<li data-row="6" data-col="4" data-sizex="1" data-sizey="1">
+      <div data-id="hdtemp" data-view="Number" data-title="HardDisk Temperature" data-suffix = "C" style="background-color:#81C784;"></div>
+      <i class="fa icon-background"></i>
+    </li>
+	
+	<li data-row="7" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="convergence" data-view="Graph" data-title="Convergence" style="background-color:#EF4E24;"></div>
+    </li>
+    <li data-row="7" data-col="3" data-sizex="2" data-sizey="1">
+      <div data-id="twitter_mentions" data-view="Comments" style="background-color:#757575;" data-moreinfo="Tweets tagged with #todayilearned"></div>
+      <i class="fa fa-twitter icon-background"></i>
+    </li>
+	
+	<li data-row="8" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="synergy" data-view="Meter" data-title="Memory Utilization" data-min="0" data-max="100"></div>
+    </li>
+	<li data-row="8" data-col="2" data-sizex="3" data-sizey="1">
+		<div data-id="barchart" data-view="bar" data-title = "" data-left-margin="5" data-top-margin="10" style="background-color:#4CAF50;"></div>
+	</li>	
+  </ul>
+  <center><div style="font-size: 12px">Try this: curl -d '{ "auth_token": "YOUR_AUTH_TOKEN", "text": "Change Title" }' \http://<%=request.host%>:<%=request.port%>/widgets/welcome</div></center>
+</div>
+<div style="background-color:#003744;">
+<div style="width:1240px" class="gridster">Esprida Corporation</div>
+</div>
+</body>
